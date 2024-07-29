@@ -13,8 +13,9 @@ from bs4 import BeautifulSoup
 url = "https://pythonscraping.com/linkedin/ietf.html"
 
 response = requests.get(url)
-print("Response from url = \n", response)
+print("Response from url: \n", response)
 
 print("HTTP status code: ", response.status_code)
 
-# print(response.text)
+print("The extracted information: \n\n")
+print(response.text) 
